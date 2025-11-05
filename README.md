@@ -37,3 +37,5 @@ After the GitHub Actions workflow runs, your site will be available at:
 Notes:
 - We added a GitHub Pages workflow that deploys on pushes to `main`.
 - A tiny `index.html` redirects to `mainpage.html` so the root URL works.
+
+Last updated: 2025-11-05
