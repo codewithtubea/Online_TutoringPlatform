@@ -1,0 +1,353 @@
+<!doctype html>
+<!-- SmartTutor Connect - Landing Page
+     Main marketing and information page for the online tutoring platform.
+     Includes hero section, about, team, gallery, tutor directory, testimonials, and contact form.
+     
+     This file is auto-generated from modular templates.
+     To edit sections, modify files in templates/sections/
+     To edit partials, modify files in templates/partials/
+     Run: npm run build (or node scripts/build.js) to rebuild
+-->
+<html lang="en">
+
+<!-- Meta tags and page configuration -->
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SmartTutor Connect</title>
+    <meta name="description" content="SmartTutor Connect links students and trusted tutors with seamless scheduling, secure sessions, and transparent reviews." />
+
+    <!-- Google Fonts: Playfair Display (headings) and Inter (body text) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="src/css/main.css">
+</head>
+
+
+<body>
+    <!-- Accessibility: Skip link for keyboard navigation -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <!-- Site Header: Fixed navigation bar with logo and menu -->
+    <header class="site-header" id="top">
+        <div class="container header-inner">
+            <!-- Brand logo and name -->
+            <a class="brand" href="#top">
+                <img src="public/images/logo.png" alt="SmartTutor Connect" class="logo" />
+                <span class="brand-name" aria-hidden="true">SmartTutor Connect</span>
+            </a>
+            <!-- Primary navigation menu -->
+            <nav class="main-nav" aria-label="Primary">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+                <div id="primary-menu" class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#team">Meet the Team</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#find">Find a Tutor</a>
+                    <a href="#become">Become a Tutor</a>
+                    <a href="#feedback">Feedback</a>
+                    <a href="#contact">Contact</a>
+                    <a href="pages/sign-in.html">Sign In</a>
+                    <a href="pages/register.html">Register</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Main content area -->
+    <main id="main-content">
+        <!-- Hero Section: Full-screen landing section with call-to-action -->
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <div class="hero-overlay" aria-hidden="true"></div>
+            <!-- Background image with fallback to SVG -->
+            <picture>
+                <source srcset="public/images/home-hero.png" type="image/png" />
+                <img src="public/images/hero-bg.svg" alt="Students learning with tutors" class="hero-bg" />
+            </picture>
+            <div class="hero-content container">
+                <!-- Hero headline and subheadline -->
+                <!--<p class="eyebrow">SmartTutor Connect</p> -->
+
+                <h1 id="hero-title" class="hero-title">Learn Smarter. Teach Better.</h1>
+                <p class="hero-sub">Connecting Students with Trusted Tutors – Anytime, Anywhere.</p>
+                <!-- Call-to-action buttons -->
+                <div class="hero-ctas">
+                    <a class="btn btn-primary" href="#find">Find a Tutor</a>
+                    <a class="btn btn-outline" href="#become">Become a Tutor</a>
+                </div>
+                <!-- Trust indicators -->
+                <div class="hero-cred">
+                    <span>100+ verified tutors</span>
+                    <span aria-hidden="true">•</span>
+                    <span>Secure video lessons</span>
+                    <span aria-hidden="true">•</span>
+                    <span>Flexible scheduling</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section: Company mission, values, and impact metrics -->
+        <section class="section about" id="about" aria-labelledby="about-title">
+            <div class="about-overlay" aria-hidden="true" style="background-image: url('public/images/about-bg.svg');"></div>
+            <div class="container about-grid">
+                <div class="about-text">
+                    <!-- Main about content -->
+                    <h2 id="about-title" class="section-title">About SmartTutor Connect</h2>
+                    <p>We build a trusted learning ecosystem that pairs every learner with the right mentor. From the first search to post-session feedback, SmartTutor Connect orchestrates each step with transparency, security, and human support.</p>
+                    <p>Our hybrid model empowers tutors with intelligent dashboards, while families gain clarity through verified profiles, ratings, and payments handled in one place. We believe that meaningful tutoring experiences unlock confidence, curiosity,
+                        and long-term success.</p>
+                    <ul class="feature-list">
+                        <li><strong>Holistic onboarding:</strong> Vetting, training, and continuous quality reviews for every tutor.</li>
+                        <li><strong>Inclusive access:</strong> Scholarships, flexible pricing, and multilingual support for global learners.</li>
+                        <li><strong>Impact-driven insights:</strong> Real-time progress reports keep students, parents, and tutors aligned.</li>
+                    </ul>
+                </div>
+                <!-- Impact metrics sidebar -->
+                <aside class="about-metrics" role="complementary" aria-label="SmartTutor impact metrics">
+                    <div class="metric-card">
+                        <h3>12k+</h3>
+                        <p>Sessions delivered across STEM, languages, and creative disciplines.</p>
+                    </div>
+                    <div class="metric-card">
+                        <h3>1.2k</h3>
+                        <p>Verified tutors with personalized dashboards and automated scheduling.</p>
+                    </div>
+                    <div class="metric-card">
+                        <h3>94%</h3>
+                        <p>Average satisfaction score rated by students and parents worldwide.</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Team Section: Meet the team members -->
+        <section class="section team" id="team" aria-labelledby="team-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="team-title" class="section-title">Meet our team</h2>
+                    <p class="section-sub">Educators, technologists, and community leaders committed to unlocking potential through personalized learning.</p>
+                </header>
+                <!-- Team member cards grid -->
+                <div class="team-grid">
+                    <article class="team-card">
+                        <img src="public/images/team-kwame.svg" alt="Maame Afua Kome-Mensah" data-fallback="public/images/tutor-portrait.svg" />
+                        <div class="team-info">
+                            <h3>Maame Afua Kome-Mensah</h3>
+                            <p class="team-role">Programs Lead</p>
+                            <p>Committed to building an accessible, trusted tutoring experience for all learners.</p>
+                        </div>
+                    </article>
+                    <article class="team-card">
+                        <img src="public/images/team-lina.svg" alt="Princess Tracy Agyemfra Acheampong" />
+                        <div class="team-info">
+                            <h3>Princess Tracy Agyemfra Acheampong</h3>
+                            <p class="team-role">Team Member</p>
+                            <p>Focused on learner success and streamlined scheduling across the platform.</p>
+                        </div>
+                    </article>
+                    <article class="team-card">
+                        <img src="public/images/team-nadia.svg" alt="Osarume Chiamaka Uwuilekhue" />
+                        <div class="team-info">
+                            <h3>Osarume Chiamaka Uwuilekhue</h3>
+                            <p class="team-role">Team Member</p>
+                            <p>Champions community support and responsive communication for families and tutors.</p>
+                        </div>
+                    </article>
+                    <article class="team-card">
+                        <img src="public/images/team-tomoh.png" alt="Tomoh Claude Ikfingeh" data-fallback="public/images/tutor-portrait.svg" />
+                        <div class="team-info">
+                            <h3>Tomoh Claude Ikfingeh</h3>
+                            <p class="team-role">Team Member</p>
+                            <p>Committed to building an accessible, trusted tutoring experience for all learners.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section: Visual showcase of platform in action -->
+        <section id="gallery" class="section media-gallery" aria-labelledby="gallery-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="gallery-title" class="section-title">SmartTutor in action</h2>
+                    <p class="section-sub">Real learning moments from students and tutors across the SmartTutor Connect community.</p>
+                </header>
+                <!-- Gallery image grid -->
+                <div class="media-grid">
+                    <figure class="media-card">
+                        <img src="public/images/gallery-learners.svg" alt="Parent guiding a student during an online tutoring session" />
+                        <figcaption>Families find the right tutor anytime, anywhere—building confidence together.</figcaption>
+                    </figure>
+                    <figure class="media-card">
+                        <img src="public/images/gallery-smarttutor.svg" alt="Two learners using SmartTutor Connect" />
+                        <figcaption>SmartTutor Connect blends supportive mentors with smart tools for every learner.</figcaption>
+                    </figure>
+                    <figure class="media-card">
+                        <img src="public/images/elearning-lights.svg" alt="E-learning concept with icons" />
+                        <figcaption>All sessions connect through secure video links and digital whiteboards.</figcaption>
+                    </figure>
+                    <figure class="media-card">
+                        <img src="public/images/student-headphones.svg" alt="Learner taking notes during an online class" />
+                        <figcaption>Learners revisit recordings and resources anytime with on-demand access.</figcaption>
+                    </figure>
+                    <figure class="media-card">
+                        <img src="public/images/tutor-portrait.svg" alt="Professional tutor smiling with a laptop" />
+                        <figcaption>Verified tutors build trusted profiles and grow their clientele worldwide.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Find a Tutor Section: Interactive tutor directory and search -->
+        <section id="find" class="section directory" aria-labelledby="find-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="find-title" class="section-title">Find a Tutor</h2>
+                    <p class="section-sub">Search by subject, rating, or availability. Hover any card to preview details and click <em>Book</em> to request a session instantly.</p>
+                </header>
+                <!-- JavaScript will inject search controls and tutor cards here -->
+                <div id="search-root" class="directory-shell"></div>
+            </div>
+        </section>
+
+        <!-- Become a Tutor Section: Recruitment and benefits for tutors -->
+        <section id="become" class="section become" aria-labelledby="become-title">
+            <div class="container become-grid">
+                <div>
+                    <h2 id="become-title" class="section-title">Become a SmartTutor</h2>
+                    <p>Grow your tutoring practice with a streamlined dashboard, smart scheduling tools, and guaranteed payments. Share your expertise while we handle the logistics.</p>
+                    <!-- Benefits grid -->
+                    <div class="stat-grid">
+                        <div>
+                            <h3>0% Listing Fee</h3>
+                            <p>Only pay commission on confirmed sessions.</p>
+                        </div>
+                        <div>
+                            <h3>Instant Payouts</h3>
+                            <p>Track your earnings and withdraw with ease.</p>
+                        </div>
+                        <div>
+                            <h3>Mobile Friendly</h3>
+                            <p>Manage availability from any device.</p>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary" href="#contact">Start Application</a>
+                </div>
+                <!-- Dashboard preview illustration -->
+                <div class="dashboard-preview" aria-hidden="true">
+                    <img src="public/images/dashboard-preview.svg" alt="" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section: Customer reviews and feedback -->
+        <section id="feedback" class="section feedback" aria-labelledby="feedback-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="feedback-title" class="section-title">What members say</h2>
+                    <p class="section-sub">Community stories from students, parents, and tutors.</p>
+                </div>
+                <!-- Testimonial cards -->
+                <div class="testimonial-grid">
+                    <article class="testimonial-card">
+                        <img src="public/images/student-tablet.svg" alt="Parent smiling during session recap" />
+                        <p>"The booking calendar keeps our tutoring schedule organized. We've met incredible mentors for our daughter's STEM courses."</p>
+                        <footer>
+                            <strong>Michelle, Parent</strong>
+                            <span>STEM Tutoring</span>
+                        </footer>
+                    </article>
+                    <article class="testimonial-card">
+                        <img src="public/images/tutor-portrait.svg" alt="Tutor smiling with laptop" />
+                        <p>"SmartTutor handles payments and reminders, so I focus on teaching. The dashboard highlights repeat students and earnings."</p>
+                        <footer>
+                            <strong>Kwame Mensah</strong>
+                            <span>English Tutor</span>
+                        </footer>
+                    </article>
+                    <article class="testimonial-card">
+                        <img src="public/images/student-headphones.svg" alt="Student learning online" />
+                        <p>"Connecting with qualified tutors for advanced physics was seamless. The video sessions integrate right into my calendar."</p>
+                        <footer>
+                            <strong>Aditya</strong>
+                            <span>University Student</span>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section: Contact information and inquiry form -->
+        <section id="contact" class="section contact" aria-labelledby="contact-title">
+            <div class="container contact-grid">
+                <div>
+                    <h2 id="contact-title" class="section-title">Reach out</h2>
+                    <p class="section-sub">Questions about onboarding, partnerships, or enterprise tutoring? Leave us a note and we'll respond within one business day.</p>
+                    <!-- Contact information -->
+                    <ul class="contact-list">
+                        <li><span class="contact-label">Email:</span> <a href="mailto:hello@smarttutorconnect.com">hello@smarttutorconnect.com</a></li>
+                        <li><span class="contact-label">Phone:</span> <a href="tel:+23353803147, +237673031205">+233 555 123 456, +237 673 031 205</a></li>
+                        <li><span class="contact-label">Head Office:</span> 1 University Avenue, Berekuso</li>
+                    </ul>
+                </div>
+                <!-- Contact form -->
+                <form class="contact-form" aria-label="Contact SmartTutor">
+                    <label for="contact-name">Name</label>
+                    <input required id="contact-name" name="name" placeholder="Your name" />
+
+                    <label for="contact-email">Email</label>
+                    <input required id="contact-email" name="email" type="email" placeholder="you@example.com" />
+
+                    <label for="contact-role">I am a</label>
+                    <select id="contact-role" name="role">
+                        <option value="student">Student</option>
+                        <option value="parent">Parent/Guardian</option>
+                        <option value="tutor">Tutor</option>
+                        <option value="organization">Organization</option>
+                    </select>
+
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" name="message" rows="4" placeholder="How can we help?" required></textarea>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Site Footer: Copyright and footer links -->
+    <footer class="site-footer" aria-label="SmartTutor footer">
+        <div class="container footer-inner">
+            <div>
+                <img src="public/images/logo.svg" alt="SmartTutor Connect" class="logo" />
+                <p class="footer-copy">© <span id="year"></span> SmartTutor Connect. Empowering personalized learning worldwide.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#privacy">Privacy</a>
+                <a href="#terms">Terms</a>
+                <a href="#support">Support</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portal root for modal dialogs injected by JavaScript -->
+    <div id="portal-root" aria-hidden="true"></div>
+
+    <!-- Main JavaScript file: Handles tutor search, filtering, booking modals, and interactive features -->
+    <script src="src/js/main.js"></script>
+
+</body>
+
+</html>

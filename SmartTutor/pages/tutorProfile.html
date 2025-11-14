@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tutor Dashboard • SmartTutor Connect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/css/main.css">
+    <link rel="stylesheet" href="../src/css/pages.css">
+    <link rel="stylesheet" href="../src/css/dashboard.css">
+</head>
+
+<body class="page-body" data-dashboard-role="tutor" data-api-base="../api">
+    <header class="page-header">
+        <div class="container">
+            <a class="brand-mark" href="../index.html">
+                <img src="../public/images/logo.png" alt="SmartTutor Connect logo">
+                <span>SmartTutor Connect</span>
+            </a>
+            <nav class="page-nav" aria-label="Tutor navigation">
+                <a href="#" class="active">Dashboard</a>
+                <a href="#schedule">Schedule</a>
+                <a href="#students">Students</a>
+                <a href="#earnings">Earnings</a>
+            </nav>
+            <div class="user-chip">
+                <img src="../public/images/tutor-portrait.svg" alt="Kwame Mensah portrait">
+                <div>
+                    <span data-user-name>Kwame Mensah</span>
+                    <small data-user-meta>STEM Tutor · Accra</small>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="profile-layout">
+        <aside class="profile-sidebar">
+            <section class="sidebar-card">
+                <h2>Today&apos;s highlights</h2>
+                <ul class="sidebar-list">
+                    <li>
+                        <strong>3 booked sessions</strong>
+                        <span>First class starts at 9:00 AM (Calculus, online).</span>
+                    </li>
+                    <li>
+                        <strong>2 new requests</strong>
+                        <span>Students awaiting confirmation for next week.</span>
+                    </li>
+                    <li>
+                        <strong>Availability</strong>
+                        <span>Update Friday slots to boost visibility.</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="sidebar-card" id="earnings">
+                <h3>Performance snapshot</h3>
+                <ul class="mini-list">
+                    <li>
+                        <div>
+                            <strong>$1,240</strong>
+                            <span>Earned this month</span>
+                        </div>
+                        <span class="badge-soft">+12% vs. March</span>
+                    </li>
+                    <li>
+                        <div>
+                            <strong>4.9 ★</strong>
+                            <span>Average student rating</span>
+                        </div>
+                        <span class="badge-soft">Top performer</span>
+                    </li>
+                    <li>
+                        <div>
+                            <strong>18 students</strong>
+                            <span>Active this term</span>
+                        </div>
+                        <span class="badge-soft">6 on waitlist</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="sidebar-card" id="students">
+                <h3>Action centre</h3>
+                <ul class="timeline">
+                    <li>Send recap notes to Emmanuel (Physics).</li>
+                    <li>Review Amina&apos;s mock test results.</li>
+                    <li>Prepare weekend workshop outline.</li>
+                </ul>
+            </section>
+        </aside>
+
+        <section class="profile-main">
+            <section class="dashboard-section" id="schedule">
+                <header>
+                    <div>
+                        <h2>Upcoming sessions</h2>
+                        <p>Review and manage your lessons for the next few days.</p>
+                    </div>
+                    <div class="section-actions">
+                        <button class="btn btn-outline" type="button">Open calendar</button>
+                        <button class="btn btn-primary" type="button">Add availability</button>
+                    </div>
+                </header>
+
+                <div class="table-responsive">
+                    <table class="dashboard-table">
+                        <thead>
+                            <tr>
+                                <th>Student</th>
+                                <th>Subject</th>
+                                <th>Date &amp; time</th>
+                                <th>Format</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Rita Boateng</td>
+                                <td>Calculus problem-solving</td>
+                                <td>Thu, 11 Apr · 9:00 AM</td>
+                                <td>Online</td>
+                                <td><span class="status-badge status-confirmed">Confirmed</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline" type="button">Share prep</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Kojo Afful</td>
+                                <td>Physics lab revision</td>
+                                <td>Thu, 11 Apr · 1:30 PM</td>
+                                <td>Hybrid</td>
+                                <td><span class="status-badge status-pending">Awaiting payment</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline" type="button">Send reminder</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Amina Issah</td>
+                                <td>Senior High entrance prep</td>
+                                <td>Fri, 12 Apr · 10:00 AM</td>
+                                <td>In-person</td>
+                                <td><span class="status-badge status-rescheduled">Rescheduled</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline" type="button">Confirm new slot</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="dashboard-section">
+                <header>
+                    <div>
+                        <h2>Student feedback</h2>
+                        <p>Celebrate wins and spot coaching opportunities.</p>
+                    </div>
+                    <div class="section-actions">
+                        <button class="btn btn-outline" type="button">View all feedback</button>
+                    </div>
+                </header>
+
+                <div class="insight-grid">
+                    <article class="insight-card">
+                        <strong>“My grades jumped by 10% in two weeks!”</strong>
+                        <span>Rita credits structured weekly assignments and quick feedback loops.</span>
+                    </article>
+                    <article class="insight-card">
+                        <strong>“Loved the interactive simulations”</strong>
+                        <span>Kojo recommends using the new digital lab exercises for upcoming sessions.</span>
+                    </article>
+                    <article class="insight-card">
+                        <strong>5/5 session satisfaction</strong>
+                        <span>Average rating maintained over the last eight lessons — great consistency.</span>
+                    </article>
+                </div>
+            </section>
+
+            <section class="dashboard-section">
+                <header>
+                    <div>
+                        <h2>Earnings overview</h2>
+                        <p>Track paid sessions, outstanding invoices, and payout schedule.</p>
+                    </div>
+                    <div class="section-actions">
+                        <button class="btn btn-outline" type="button">Download report</button>
+                    </div>
+                </header>
+
+                <div class="table-responsive">
+                    <table class="dashboard-table">
+                        <thead>
+                            <tr>
+                                <th>Invoice</th>
+                                <th>Student</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th>Payout date</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#INV-2045</td>
+                                <td>Rita Boateng</td>
+                                <td>$75.00</td>
+                                <td><span class="status-badge status-confirmed">Paid</span></td>
+                                <td>10 Apr 2024</td>
+                                <td><button class="btn btn-sm btn-outline" type="button">View receipt</button></td>
+                            </tr>
+                            <tr>
+                                <td>#INV-2046</td>
+                                <td>Kojo Afful</td>
+                                <td>$60.00</td>
+                                <td><span class="status-badge status-pending">Pending</span></td>
+                                <td>Awaiting payment</td>
+                                <td><button class="btn btn-sm btn-outline" type="button">Send invoice</button></td>
+                            </tr>
+                            <tr>
+                                <td>#INV-2047</td>
+                                <td>Amina Issah</td>
+                                <td>$85.00</td>
+                                <td><span class="status-badge status-rescheduled">Adjusted</span></td>
+                                <td>14 Apr 2024</td>
+                                <td><button class="btn btn-sm btn-outline" type="button">Update details</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="../src/js/auth.js" defer></script>
+</body>
+
+</html>
