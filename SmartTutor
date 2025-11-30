@@ -1,0 +1,4 @@
+Plain password: NewStrongPassword123!
+Bcrypt hash:   $2y$10$EPBjPUpcHrNWYgDXKm.VYuGP0NhzdI9WaRFSfoGyR93Ts2eFsfhh6
+
+Paste the hash into the users.password_hash column.
